@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SelectWise</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Global Reset and Base */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body, html {
+      height: 100%;
+      overflow-x: hidden;
+    }
+
+    /* Background */
+    .background {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(
+          rgba(0, 0, 0, 0.6),
+          rgba(0, 0, 0, 0.6)
+        ),
+        url('HH.jpg'); /* Replace with actual image */
+      background-size: cover;
+      background-position: center;
+      z-index: -1;
+      animation: backgroundMove 10s infinite ease-in-out;
+    }
+
+    @keyframes backgroundMove {
+      0% { background-position: center; }
+      50% { background-position: left top; }
+      100% { background-position: center; }
+    }
+
+    /* Hero Section */
+    .hero {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      height: 100vh;
+      color: white;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .hero h1 {
+      font-size: 56px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .hero p {
+      font-size: 20px;
+      margin-bottom: 30px;
+      opacity: 0.8;
+      animation: fadeUp 1.5s ease-in-out;
+    }
+
+    .hero .explore-btn {
+      background-color: #4CAF50;
+      color: white;
+      padding: 14px 30px;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s ease;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .hero .explore-btn:hover {
+      background-color: #45a049;
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+    }
+
+    /* Features Section */
+    .features {
+      display: flex;
+      justify-content: center;
+      gap: 50px;
+      margin-top: 50px;
+      padding: 0 20px;
+      animation: slideIn 2s ease-out;
+    }
+
+    .feature {
+      text-align: center;
+      width: 250px;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 10px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .feature:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    }
+
+    .feature h2 {
+      font-size: 32px;
+      margin-bottom: 15px;
+      color: #4CAF50;
+      transition: transform 0.3s ease;
+    }
+
+    .feature:hover h2 {
+      transform: scale(1.1);
+    }
+
+    .feature p {
+      color: white;
+      font-size: 16px;
+      opacity: 0.8;
+    }
+
+    /* Footer */
+    .footer {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 14px;
+      opacity: 0.8;
+    }
+
+    .footer p {
+      margin: 0;
+    }
+
+    .footer a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 10px;
+      transition: 0.3s;
+    }
+
+    .footer a:hover {
+      color: #4CAF50;
+    }
+
+    /* Keyframe Animations */
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(-30px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeUp {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes slideIn {
+      0% {
+        opacity: 0;
+        transform: translateX(-50px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="background"></div>
+
+  <header class="hero">
+    <h1 class="site-title">SelectWise</h1>
+    <p class="tagline">Compare Smart, Buy Smarter</p>
+    <!-- Updated Explore Now Button with Link -->
+    <a href="product-comparison.html" class="explore-btn">Explore Now</a>
+  </header>
+
+  <section class="features">
+    <div class="feature">
+      <h2>🔍 Smart Comparisons</h2>
+      <p>Compare products across Amazon, Flipkart, Myntra, Ajio and more – all in one place.</p>
+    </div>
+    <div class="feature">
+      <h2>🛍️ Honest Insights</h2>
+      <p>Get real reviews, best deals, and feature breakdowns before making a purchase.</p>
+    </div>
+    <div class="feature">
+      <h2>⚡ One Click Redirection</h2>
+      <p>Found the best option? Instantly jump to the platform you trust.</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2025 SelectWise. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
