@@ -455,16 +455,22 @@
     }
 
     // Price filtering functionality
-    function filterByPrice() {
-      const minPrice = parseFloat(document.getElementById('min-price').value) || 0;
-      const maxPrice = parseFloat(document.getElementById('max-price').value) || Infinity;
-      const productCards = document.querySelectorAll('.product-card');
+ 
+function filterByPrice() {
+  const minPriceInput = document.getElementById('min-price').value;
+  const maxPriceInput = document.getElementById('max-price').value;
 
-      productCards.forEach(card => {
-        const price = parseFloat(card.getAttribute('data-price'));
-        card.style.display = (price >= minPrice && price <= maxPrice) ? 'block' : 'none';
-      });
-    }
+  const minPrice = minPriceInput === "" ? 0 : parseFloat(minPriceInput);
+  const maxPrice = maxPriceInput === "" ? Infinity : parseFloat(maxPriceInput);
+
+  const productCards = document.querySelectorAll('.product-card');
+
+  productCards.forEach(card => {
+    const price = parseFloat(card.getAttribute('data-price'));
+    card.style.display = (price >= minPrice && price <= maxPrice) ? 'block' : 'none';
+  });
+}
+
 
     // Sorting functionality
     function sortByPrice() {
