@@ -297,105 +297,345 @@
 </header>
 
   <section class="products" id="product-list">
-    <div class="product-card" data-category="phones" data-price="72900">
+    <div class="product-card" data-category="phones" data-price="74900">
       <img src="iphone.jpg" alt="Phone">
       <h3>iPhone 16</h3>
       <div class="price">₹72,900 TO ₹74,900</div>
       <div class="compare-wrapper">
         <button class="compare-btn" onclick="toggleCompareOptions(this)">Compare</button>
         <div class="compare-options" style="display: none;">
-          <a href="https://amzn.in/d/18cmtHp" target="_blank">Amazon</a>
-          <a href="https://dl.flipkart.com/s/48P9WiuuuN" target="_blank">Flipkart</a>
+          <a href="https://amzn.in/d/18cmtHp" target="_blank">Amazon :₹72,900</a>
+          <a href="https://dl.flipkart.com/s/48P9WiuuuN" target="_blank">Flipkart :₹74,900</a>
         </div>
       </div>
     </div>
   
     <div class="product-card" data-category="phones" data-price="129999">
-        <img src="sam.jpg" alt="Phone">
-        <h3>Samsung Galaxy S25 Ultra</h3>
-        <div class="price">₹1,29,999</div>
-        <div class="compare-wrapper">
-          <button class="compare-btn" onclick="toggleCompareOptions(this)">Compare</button>
-          <div class="compare-options" style="display: none;">
-            <a href="https://amzn.in/d/1UfebtW" target="_blank">Amazon</a>
-            <a href="https://dl.flipkart.com/s/Qqk9aONNNN" target="_blank">Flipkart</a>
-          </div>
+      <img src="sam.jpg" alt="Samsung Galaxy S25 Ultra" loading="lazy">
+      <h3>Samsung Galaxy S25 Ultra</h3>
+      <div class="price">₹1,29,999</div>
+      <div class="compare-wrapper">
+        <button class="compare-btn" onclick="toggleCompareOptions(this)" aria-expanded="false" aria-controls="compare-s25">
+          Compare
+        </button>
+        <div class="compare-options" id="compare-s25" hidden>
+          <a href="https://amzn.in/d/1UfebtW" target="_blank" rel="noopener noreferrer">Amazon :₹1,29,999</a>
+          <a href="https://dl.flipkart.com/s/Qqk9aONNNN" target="_blank" rel="noopener noreferrer">Flipkart  :₹1,29,999</a>
         </div>
       </div>
-  
-
-      <div class="product-card" data-category="fashion" data-price="724">
-        <img src="SS.png" alt="Fashion">
-        <h3>LOUIS PHILIPPE Graphic Print Men Round Neck Black T-Shirt</h3>
-        <div class="price">₹723 TO ₹999</div>
-        <div class="compare-wrapper">
-          <button class="compare-btn" onclick="toggleCompareOptions(this)">Compare</button>
-          <div class="compare-options" style="display: none;">
-            <a href="https://amzn.in/d/gA4Bseu" target="_blank">Amazon</a>
-            <a href="https://dl.flipkart.com/s/QqEQuBNNNN" target="_blank">Flipkart</a>
-            <a href="https://www.ajio.com/louis-philippe-graphic-print-slim-fit-crew-neck-t-shirt/p/460902489002" target="_blank">Ajio</a>
-            <a href="https://www.myntra.com/mailers/topwear/louis-philippe-jeans/louis-philippe-jeans-men-black-printed-cotton-t-shirt/14059396/buy?utm_source=social_share_pdp&utm_medium=deeplink&utm_campaign=social_share_pdp_deeplink" target="_blank">Myntra</a>
-          </div>
-        </div>
     </div>
 
-
-        <div class="product-card" data-category="fashion" data-price="3019">
-            <img src="shoe.jpg" alt="Fashion">
-            <h3>Woodland Men's Leather Sneaker</h3>
-            <div class="price">₹3,019 TO ₹3,146</div>
-            <div class="compare-wrapper">
-              <button class="compare-btn" onclick="toggleCompareOptions(this)">Compare</button>
-              <div class="compare-options" style="display: none;">
-                <a href="https://amzn.in/d/fsLq5bo" target="_blank">Amazon</a>
-                <a href="https://dl.flipkart.com/s/4ZHcWwuuuN" target="_blank">Flipkart</a>
-                <a href="https://www.myntra.com/casual-shoes/woodland/woodland-men-leather-sneakers/21295660/buy" target="_blank">Myntra</a>
-                <a href="https://www.woodlandworldwide.com/product-detail/FGC0T8018691A-KHAKI" target="_blank">Woodland</a>
-              </div>
-            </div>
+    <div class="product-card" data-category="phones" data-price="69998">
+      <img src="one.jpg" alt="OnePlus 13" loading="lazy">
+      <h3>OnePlus 13</h3>
+      <div class="price">₹64,998 – ₹69,998</div>
+      <div class="compare-wrapper">
+        <button class="compare-btn" onclick="toggleCompareOptions(this)" aria-expanded="false" aria-controls="compare-oneplus-phone">
+          Compare
+        </button>
+        <div class="compare-options" id="compare-oneplus-phone" hidden>
+          <a href="https://amzn.in/d/4mE52ZW" target="_blank" rel="noopener noreferrer">Amazon :₹69,998</a>
+          <a href="https://dl.flipkart.com/s/5V!mHiuuuN" target="_blank" rel="noopener noreferrer">Flipkart  :₹64,998</a>
         </div>
+      </div>
+    </div>
+    
+    
+    <div class="product-card" data-category="phones" data-price="38999">
+      <img src="N.jpg" alt="Nothing Phone (2) 5G" loading="lazy">
+      <h3>Nothing Phone (2) 5G</h3>
+      <div class="price">₹37,989 – ₹38,999</div>
+      <div class="compare-wrapper">
+        <button class="compare-btn" onclick="toggleCompareOptions(this)" aria-expanded="false" aria-controls="compare-nothing-phone">
+          Compare
+        </button>
+        <div class="compare-options" id="compare-nothing-phone" hidden>
+          <a href="https://amzn.in/d/daVHNVS" target="_blank" rel="noopener noreferrer">Amazon :₹37,989</a>
+          <a href="https://dl.flipkart.com/s/e05XgYNNNN" target="_blank" rel="noopener noreferrer">Flipkart :₹38,999</a>
+        </div>
+      </div>
+    </div>
 
-          <div class="product-card" data-category="beauty" data-price="227">
-            <img src="ll.jpg" alt="Beauty">
-            <h3>Lakme 9to5 Powerplay Priming Matte Lipstick</h3>
-            <div class="price">₹227 TO ₹389</div>
-            <div class="compare-wrapper">
-              <button class="compare-btn" onclick="toggleCompareOptions(this)">Compare</button>
-              <div class="compare-options" style="display: none;">
-                <a href="https://amzn.in/d/gidnwlV" target="_blank">Amazon</a>
-                <a href="https://dl.flipkart.com/s/Q_B8UYNNNN" target="_blank">Flipkart</a>
-                <a href="https://www.myntra.com/mailers/makeup/lakme/lakme-9to5-powerplay-priming-matte-lipstick-3.6g---lasts-16hrs---burgundy-passion/14095434/buy?utm_source=social_share_pdp&utm_medium=deeplink&utm_campaign=social_share_pdp_deeplink" target="_blank">Myntra</a>
-                <a href="https://www.ajio.com/lakme-9-to-5-powerplay-priming-matte-lipstick-lasts-16hrs-burgundy-passion/p/4921774340_burgundypassion" target="_blank">Nykaa</a>
-              </div>
-            </div>
-          </div>
+    <div class="product-card" data-category="phones" data-price="94999">
+      <img src="vv.jpg" alt="Vivo X200 Pro 5G" loading="lazy">
+      <h3>Vivo X200 Pro 5G</h3>
+      <div class="price">₹94,999</div>
+      <div class="compare-wrapper">
+        <button class="compare-btn" onclick="toggleCompareOptions(this)" aria-expanded="false" aria-controls="compare-vivo-phone">
+          Compare
+        </button>
+        <div class="compare-options" id="compare-vivo-phone" hidden>
+          <a href="https://amzn.in/d/aBaIG7O" target="_blank" rel="noopener noreferrer">Amazon :₹94,999</a>
+          <a href="https://dl.flipkart.com/s/e0zdiUNNNN" target="_blank" rel="noopener noreferrer">Flipkart :₹94,999</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="product-card" data-category="phones" data-price="49999">
+      <img src="op.jpg" alt="OPPO Reno13 Pro 5G" loading="lazy">
+      <h3>OPPO Reno13 Pro 5G</h3>
+      <div class="price">₹49,999</div>
+      <div class="compare-wrapper">
+        <button class="compare-btn" onclick="toggleCompareOptions(this)" aria-expanded="false" aria-controls="compare-oppo-phone">
+          Compare
+        </button>
+        <div class="compare-options" id="compare-oppo-phone" hidden>
+          <a href="https://amzn.in/d/aPZ44HZ" target="_blank" rel="noopener noreferrer">Amazon :₹49,999</a>
+          <a href="https://dl.flipkart.com/s/e0xOgBNNNN" target="_blank" rel="noopener noreferrer">Flipkart :₹49,999</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="product-card" data-category="phones" data-price="26999">
+      <img src="real.jpg" alt="Realme 14 Pro 5G" loading="lazy">
+      <h3>Realme 14 Pro 5G</h3>
+      <div class="price">₹26,350 – ₹26,999</div>
+      <div class="compare-wrapper">
+        <button class="compare-btn" onclick="toggleCompareOptions(this)" aria-expanded="false" aria-controls="compare-realme-phone">
+          Compare
+        </button>
+        <div class="compare-options" id="compare-realme-phone" hidden>
+          <a href="https://amzn.in/d/iarAYJV" target="_blank" rel="noopener noreferrer">Amazon :₹26,350</a>
+          <a href="https://dl.flipkart.com/s/e0vneONNNN" target="_blank" rel="noopener noreferrer">Flipkart :₹26,999</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="product-card" data-category="phones" data-price="33099">
+      <img src="red.jpg" alt="Redmi Note 14 Pro+" loading="lazy">
+      <h3>Redmi Note 14 Pro+</h3>
+      <div class="price">₹31,999 – ₹33,099</div>\
+      <div class="compare-wrapper">
+        <button class="compare-btn" onclick="toggleCompareOptions(this)" aria-expanded="false" aria-controls="compare-redmi-phone">
+          Compare
+        </button>
+        <div class="compare-options" id="compare-redmi-phone" hidden>
+          <a href="https://amzn.in/d/iFRCA1t" target="_blank" rel="noopener noreferrer">Amazon :₹33,099</a>
+          <a href="https://dl.flipkart.com/s/5VDNtkuuuN" target="_blank" rel="noopener noreferrer">Flipkart :₹31,999</a>
+        </div>
+      </div>
+    </div>
 
-          <div class="product-card" data-category="home" data-price="43490">
-            <img src="ac.jpg" alt="Home">
-            <h3>Blue Star 1.5 Ton 5 Star AC</h3>
-            <div class="price">₹43,490 TO ₹44,490</div>
-            <div class="compare-wrapper">
-              <button class="compare-btn" onclick="toggleCompareOptions(this)">Compare</button>
-              <div class="compare-options" style="display: none;">
-                <a href="https://amzn.in/d/93bGrP2" target="_blank">Amazon</a>
-                <a href="https://dl.flipkart.com/s/4PxhSEuuuN" target="_blank">Flipkart</a>
-              </div>
-            </div>
-          </div>
- 
-          <div class="product-card" data-category="home" data-price="2996">
-            <img src="bb.jpg" alt="Home">
-            <h3>BlendLife Ultra Waterproof Portable Blender</h3>
-            <div class="price">₹2,996 TO ₹3,000</div>
-            <div class="compare-wrapper">
-              <button class="compare-btn" onclick="toggleCompareOptions(this)">Compare</button>
-              <div class="compare-options" style="display: none;">
-                <a href="https://amzn.in/d/8wNEM4C" target="_blank">Amazon</a>
-                <a href="https://dl.flipkart.com/s/4PU9EVuuuN" target="_blank">Flipkart</a>
-              </div>
-            </div>
-          </div>
-          
+    <div class="product-card" data-category="fashion" data-price="1749">
+      <img src="us.jpg" alt="U.S. Polo Assn. White Shirt" loading="lazy">
+      <h3>U.S. Polo Assn. White Shirt</h3>
+      <div class="price">₹1,722 – ₹1,749</div>
+      <div class="compare-wrapper">
+        <button class="compare-btn" onclick="toggleCompareOptions(this)" aria-expanded="false" aria-controls="compare-us-polo-shirt">
+          Compare
+        </button>
+        <div class="compare-options" id="compare-us-polo-shirt" hidden>
+          <a href="https://amzn.in/d/1RH7Is4" target="_blank" rel="noopener noreferrer">Amazon :₹1,722</a>
+          <a href="https://www.myntra.com/shirts/u.s.+polo+assn./u-s-polo-assn-men-white-casual-shirt/19163128/buy" target="_blank" rel="noopener noreferrer">Myntra :₹1,749</a>
+        </div>
+      </div>
+    </div>
+    
+    
+    <div class="product-card" data-category="fashion" data-price="999">
+      <img src="SS.png" alt="LOUIS PHILIPPE Black T-Shirt" loading="lazy">
+      <h3>LOUIS PHILIPPE Round Neck Black T-Shirt</h3>
+      <div class="price">₹723 – ₹999</div>
+      <div class="compare-wrapper">
+        <button class="compare-btn" onclick="toggleCompareOptions(this)" aria-expanded="false" aria-controls="compare-lp-shirt">
+          Compare
+        </button>
+        <div class="compare-options" id="compare-lp-shirt" hidden>
+          <a href="https://amzn.in/d/gA4Bseu" target="_blank" rel="noopener noreferrer">Amazon :₹724</a>
+          <a href="https://dl.flipkart.com/s/QqEQuBNNNN" target="_blank" rel="noopener noreferrer">Flipkart :₹723</a>
+          <a href="https://www.ajio.com/louis-philippe-graphic-print-slim-fit-crew-neck-t-shirt/p/460902489002" target="_blank" rel="noopener noreferrer">Ajio :₹999</a>
+          <a href="https://www.myntra.com/mailers/topwear/louis-philippe-jeans/louis-philippe-jeans-men-black-printed-cotton-t-shirt/14059396/buy?utm_source=social_share_pdp&utm_medium=deeplink&utm_campaign=social_share_pdp_deeplink" target="_blank" rel="noopener noreferrer">Myntra :₹999</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="product-card" data-category="fashion" data-price="3146">
+      <img src="shoe.jpg" alt="Woodland Men's Leather Sneaker" loading="lazy">
+      <h3>Woodland Men's Leather Sneaker</h3>
+      <div class="price">₹3,019 – ₹3,146</div>
+      <div class="compare-wrapper">
+        <button class="compare-btn" onclick="toggleCompareOptions(this)" aria-expanded="false" aria-controls="compare-woodland">
+          Compare
+        </button>
+        <div class="compare-options" id="compare-woodland" hidden>
+          <a href="https://amzn.in/d/fsLq5bo" target="_blank" rel="noopener noreferrer">Amazon :₹3,146</a>
+          <a href="https://dl.flipkart.com/s/4ZHcWwuuuN" target="_blank" rel="noopener noreferrer">Flipkart :₹3,103</a>
+          <a href="https://www.myntra.com/casual-shoes/woodland/woodland-men-leather-sneakers/21295660/buy" target="_blank" rel="noopener noreferrer">Myntra :₹3,146</a>
+          <a href="https://www.woodlandworldwide.com/product-detail/FGC0T8018691A-KHAKI" target="_blank" rel="noopener noreferrer">Woodland :₹3,146</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card" data-category="fashion" data-price="5036">
+      <img src="nn.jpg" alt="Nike Men's Run Swift 3 Running Shoes" loading="lazy">
+      <h3>Nike Men's Run Swift 3 Running Shoes</h3>
+      <div class="price">₹5,036 – ₹5,665</div>
+      <div class="compare-wrapper">
+        <button class="compare-btn" onclick="toggleCompareOptions(this)" aria-expanded="false" aria-controls="compare-nike">
+          Compare
+        </button>
+        <div class="compare-options" id="compare-nike" hidden>
+          <a href="https://amzn.in/d/hditSc1" target="_blank" rel="noopener noreferrer">Amazon :₹5,665</a>
+          <a href="https://dl.flipkart.com/s/VuJEeiuuuN" target="_blank" rel="noopener noreferrer">Flipkart :₹5,036</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card" data-category="fashion" data-price="1695">
+      <img src="cv.jpg" alt="Casio Vintage Watch" loading="lazy">
+      <h3>Casio Vintage Watch</h3>
+      <div class="price">₹1,695</div>
+      <div class="compare-wrapper">
+        <button class="compare-btn" onclick="toggleCompareOptions(this)" aria-expanded="false" aria-controls="compare-casio">
+          Compare
+        </button>
+        <div class="compare-options" id="compare-casio" hidden>
+          <a href="https://amzn.in/d/aJScRG0" target="_blank" rel="noopener noreferrer">Amazon :₹1,695</a>
+          <a href="https://dl.flipkart.com/s/0N652UNNNN" target="_blank" rel="noopener noreferrer">Flipkart :₹1,695</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card" data-category="fashion" data-price="1690">
+      <img src="as.jpg" alt="Allen Solly Leather Wallet" loading="lazy">
+      <h3>Allen Solly Leather Wallet</h3>
+      <div class="price">₹1,690 – ₹1,899</div>
+      <div class="compare-wrapper">
+        <button class="compare-btn" onclick="toggleCompareOptions(this)" aria-expanded="false" aria-controls="compare-allensolly">
+          Compare
+        </button>
+        <div class="compare-options" id="compare-allensolly" hidden>
+          <a href="https://amzn.in/d/gzyBmZa" target="_blank" rel="noopener noreferrer">Amazon :₹1,899</a>
+          <a href="https://www.myntra.com/wallets/allen+solly/allen-solly-leather-two-fold-wallet/26870456/buy" target="_blank" rel="noopener noreferrer">Myntra :₹1,690</a>
+          <a href="https://www.ajio.com/allen-solly-men-genuine-leather-bi-fold-wallet/p/469588619001" target="_blank" rel="noopener noreferrer">Ajio :₹1,899</a>
+          <a href="https://allensolly.abfrl.in/p/men-black-solid-leather-wallet-964951.html?size=Free+Size" target="_blank" rel="noopener noreferrer">Allen Solly :₹1,690</a>
+      </div>
+      </div>
+    </div>
+    
+    <div class="product-card" data-category="beauty" data-price="389">
+      <img src="ll.jpg" alt="Lakme 9to5 Powerplay Priming Matte Lipstick" loading="lazy">
+      <h3>Lakme 9to5 Powerplay Priming Matte Lipstick</h3>
+      <div class="price">₹325 – ₹389</div>
+      <div class="compare-wrapper">
+        <button class="compare-btn" onclick="toggleCompareOptions(this)" aria-expanded="false" aria-controls="compare-lakme">
+          Compare
+        </button>
+        <div class="compare-options" id="compare-lakme" hidden>
+          <a href="https://amzn.in/d/gidnwlV" target="_blank" rel="noopener noreferrer">Amazon :₹325</a>
+          <a href="https://dl.flipkart.com/s/Q_B8UYNNNN" target="_blank" rel="noopener noreferrer">Flipkart :₹389</a>
+          <a href="https://www.myntra.com/mailers/makeup/lakme/lakme-9to5-powerplay-priming-matte-lipstick-3.6g---lasts-16hrs---burgundy-passion/14095434/buy?utm_source=social_share_pdp&utm_medium=deeplink&utm_campaign=social_share_pdp_deeplink" target="_blank" rel="noopener noreferrer">Myntra :₹357</a>
+          <a href="https://www.ajio.com/lakme-9-to-5-powerplay-priming-matte-lipstick-lasts-16hrs-burgundy-passion/p/4921774340_burgundypassion" target="_blank" rel="noopener noreferrer">Ajio :₹364</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card" data-category="beauty" data-price="387">
+      <img src="p.jpg" alt="RENEE Midnight Kohl Kajal Pencil" loading="lazy">
+      <h3>RENEE Midnight Kohl Kajal Pencil</h3>
+      <div class="price">₹387 – ₹389</div>
+      <div class="compare-wrapper">
+        <button class="compare-btn" onclick="toggleCompareOptions(this)" aria-expanded="false" aria-controls="compare-renee">
+          Compare
+        </button>
+        <div class="compare-options" id="compare-renee" hidden>
+          <a href="https://amzn.in/d/2G3A15F" target="_blank" rel="noopener noreferrer">Amazon :₹387</a>
+          <a href="https://dl.flipkart.com/s/Vwe71kuuuN" target="_blank" rel="noopener noreferrer">Flipkart :₹389</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="product-card" data-category="beauty" data-price="565">
+      <img src="s.jpg" alt="Bella Vita Luxury Man Perfume" loading="lazy">
+      <h3>Bella Vita Luxury Man Perfume</h3>
+      <div class="price">₹565</div>
+      <div class="compare-wrapper">
+        <button class="compare-btn" onclick="toggleCompareOptions(this)" aria-expanded="false" aria-controls="compare-bella-vita">
+          Compare
+        </button>
+        <div class="compare-options" id="compare-bella-vita" hidden>
+          <a href="https://amzn.in/d/bd4W1XT" target="_blank" rel="noopener noreferrer">Amazon :₹565</a>
+          <a href="https://dl.flipkart.com/s/0BU5b9NNNN" target="_blank" rel="noopener noreferrer">Flipkart :₹565</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="product-card" data-category="beauty" data-price="129">
+      <img src="c.jpg" alt="Lacto Calamine Daily Cleansing Facial Wipes" loading="lazy">
+      <h3>Lacto Calamine Daily Cleansing Facial Wipes</h3>
+      <div class="price">₹129 – ₹239</div>
+      <div class="compare-wrapper">
+        <button class="compare-btn" onclick="toggleCompareOptions(this)" aria-expanded="false" aria-controls="compare-lacto">
+          Compare
+        </button>
+        <div class="compare-options" id="compare-lacto" hidden>
+          <a href="https://amzn.in/d/abyJz4b" target="_blank" rel="noopener noreferrer">Amazon :₹129</a>
+          <a href="https://dl.flipkart.com/s/0BdspjNNNN" target="_blank" rel="noopener noreferrer">Flipkart :₹239</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="product-card" data-category="home" data-price="44490">
+      <img src="ac.jpg" alt="Blue Star 1.5 Ton 5 Star AC" loading="lazy">
+      <h3>Blue Star 1.5 Ton 5 Star AC</h3>
+      <div class="price">₹43,490 – ₹44,490</div>
+      <div class="compare-wrapper">
+        <button class="compare-btn" onclick="toggleCompareOptions(this)" aria-expanded="false" aria-controls="compare-blue-star">
+          Compare
+        </button>
+        <div class="compare-options" id="compare-blue-star" hidden>
+          <a href="https://amzn.in/d/93bGrP2" target="_blank" rel="noopener noreferrer">Amazon :₹44,490</a>
+          <a href="https://dl.flipkart.com/s/4PxhSEuuuN" target="_blank" rel="noopener noreferrer">Flipkart :₹43,490</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="product-card" data-category="home" data-price="3000">
+      <img src="bb.jpg" alt="BlendLife Ultra Waterproof Portable Blender" loading="lazy">
+      <h3>BlendLife Ultra Waterproof Portable Blender</h3>
+      <div class="price">₹2,996 – ₹3,000</div>
+      <div class="compare-wrapper">
+        <button class="compare-btn" onclick="toggleCompareOptions(this)" aria-expanded="false" aria-controls="compare-blender">
+          Compare
+        </button>
+        <div class="compare-options" id="compare-blender" hidden>
+          <a href="https://amzn.in/d/8wNEM4C" target="_blank" rel="noopener noreferrer">Amazon :₹2,996</a>
+          <a href="https://dl.flipkart.com/s/4PU9EVuuuN" target="_blank" rel="noopener noreferrer">Flipkart :₹3,000</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="product-card" data-category="home" data-price="445">
+      <img src="b.jpg" alt="Philips 30W LED Light Bulb" loading="lazy">
+      <h3>Philips 30W LED Light Bulb</h3>
+      <div class="price">₹445 – ₹449</div>
+      <div class="compare-wrapper">
+        <button class="compare-btn" onclick="toggleCompareOptions(this)" aria-expanded="false" aria-controls="compare-philips">
+          Compare
+        </button>
+        <div class="compare-options" id="compare-philips" hidden>
+          <a href="https://amzn.in/d/hkaYacL" target="_blank" rel="noopener noreferrer">Amazon :₹445</a>
+          <a href="https://blinkit.com/prn/philips-lighting-acebright-30w-led-bulb-(crystal-white)/prid/545316?lat=17.3250769794900&lon=78.4260253238596" target="_blank" rel="noopener noreferrer">Blinkit :₹449</a>
+          <a href="https://www.zeptonow.com/pn/philips-acebright-30-w-b22-led-bulb-(crystal-white)/pvid/f69acb8c-ae77-4279-b921-f428b97edc19" target="_blank" rel="noopener noreferrer">Zepto :₹448</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="product-card" data-category="home" data-price="3399">
+      <img src="f.jpg" alt="Atomberg Renesa Ceiling Fan" loading="lazy">
+      <h3>Atomberg Renesa Ceiling Fan</h3>
+      <div class="price">₹3,399</div>
+      <div class="compare-wrapper">
+        <button class="compare-btn" onclick="toggleCompareOptions(this)" aria-expanded="false" aria-controls="compare-atomberg">
+          Compare
+        </button>
+        <div class="compare-options" id="compare-atomberg" hidden>
+          <a href="https://amzn.in/d/hNshvAV" target="_blank" rel="noopener noreferrer">Amazon :₹3,399</a>
+          <a href="https://dl.flipkart.com/s/0BWUgpNNNN" target="_blank" rel="noopener noreferrer">Flipkart :₹3,399</a>
+        </div>
+      </div>
+    </div>    
+        
     </div>
   </section>
 <footer>
@@ -455,16 +695,21 @@
     }
 
     // Price filtering functionality
-    function filterByPrice() {
-      const minPrice = parseFloat(document.getElementById('min-price').value) || 0;
-      const maxPrice = parseFloat(document.getElementById('max-price').value) || Infinity;
-      const productCards = document.querySelectorAll('.product-card');
+   
+function filterByPrice() {
+  const minPriceInput = document.getElementById('min-price').value;
+  const maxPriceInput = document.getElementById('max-price').value;
 
-      productCards.forEach(card => {
-        const price = parseFloat(card.getAttribute('data-price'));
-        card.style.display = (price >= minPrice && price <= maxPrice) ? 'block' : 'none';
-      });
-    }
+  const minPrice = minPriceInput === "" ? 0 : parseFloat(minPriceInput);
+  const maxPrice = maxPriceInput === "" ? Infinity : parseFloat(maxPriceInput);
+
+  const productCards = document.querySelectorAll('.product-card');
+
+  productCards.forEach(card => {
+    const price = parseFloat(card.getAttribute('data-price'));
+    card.style.display = (price >= minPrice && price <= maxPrice) ? 'block' : 'none';
+  });
+}
 
     // Sorting functionality
     function sortByPrice() {
@@ -482,9 +727,27 @@
     }
 
     function toggleCompareOptions(btn) {
-        const options = btn.nextElementSibling;
-        options.style.display = options.style.display === 'block' ? 'none' : 'block';
-    }
+      const options = btn.nextElementSibling;
+      const isHidden = options.style.display === 'none' || options.hasAttribute('hidden');
+  
+      // Close all open compare options
+      document.querySelectorAll('.compare-options').forEach(opt => {
+          opt.setAttribute('hidden', '');
+          opt.previousElementSibling.setAttribute('aria-expanded', 'false');
+      });
+  
+      // Toggle visibility for the clicked button's options
+      if (isHidden) {
+          options.removeAttribute('hidden');
+          options.style.display = 'block';
+          btn.setAttribute('aria-expanded', 'true');
+      } else {
+          options.setAttribute('hidden', '');
+          options.style.display = 'none';
+          btn.setAttribute('aria-expanded', 'false');
+      }
+  }
+  
 
     // Category filtering functionality
     function filterByCategory(category) {
